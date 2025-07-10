@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>TikTok Lite ダウンロードページ</title>
+
+  <!-- アプリを優先的に開くよう促す（iOS/Android両対応試み） -->
+  <meta property="al:ios:url" content="snssdk1233://">
+  <meta property="al:ios:app_store_id" content="1235601864">
+  <meta property="al:ios:app_name" content="TikTok Lite">
+  <meta property="al:android:url" content="snssdk1233://">
+  <meta property="al:android:package" content="com.zhiliaoapp.musically.go">
+  <meta property="al:android:app_name" content="TikTok Lite">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 100px 20px;
+      background: #fff;
+    }
+    .button {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #ff2d55;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 18px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .button:hover {
+      background-color: #e02148;
+    }
+  </style>
+</head>
+<body>
+  <h1>TikTok Lite キャンペーンページ</h1>
+  <p>下のボタンをタップすると TikTok Lite アプリが開きます。</p>
+
+  <a class="button" href="snssdk1233://lite.tiktok.com/t/ZSBHf6aJp" id="openApp">アプリで開く</a>
+
+  <p style="margin-top: 20px;">
+    ※ アプリが開かない場合は<br>
+    <a href="https://lite.tiktok.com/t/ZSBHf6aJp" target="_blank">こちらのリンク</a> をタップしてください。
+  </p>
+
+  <script>
+    // LINEブラウザなどを検知して注意を表示する（任意）
+    if (navigator.userAgent.includes("Line")) {
+      alert("LINEではアプリが正常に開かない可能性があります。右上の「･･･」から『他のブラウザで開く』を選んでください。");
+    }
+  </script>
+</body>
+</html>
